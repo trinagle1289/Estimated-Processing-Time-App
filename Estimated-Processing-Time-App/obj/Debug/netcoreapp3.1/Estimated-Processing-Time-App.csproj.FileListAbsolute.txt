@@ -1,0 +1,15 @@
+E:\Repositories\Estimated-Processing-Time-App\Estimated-Processing-Time-App\bin\Debug\netcoreapp3.1\Estimated-Processing-Time-App.exe
+E:\Repositories\Estimated-Processing-Time-App\Estimated-Processing-Time-App\bin\Debug\netcoreapp3.1\Estimated-Processing-Time-App.deps.json
+E:\Repositories\Estimated-Processing-Time-App\Estimated-Processing-Time-App\bin\Debug\netcoreapp3.1\Estimated-Processing-Time-App.runtimeconfig.json
+E:\Repositories\Estimated-Processing-Time-App\Estimated-Processing-Time-App\bin\Debug\netcoreapp3.1\Estimated-Processing-Time-App.runtimeconfig.dev.json
+E:\Repositories\Estimated-Processing-Time-App\Estimated-Processing-Time-App\bin\Debug\netcoreapp3.1\Estimated-Processing-Time-App.dll
+E:\Repositories\Estimated-Processing-Time-App\Estimated-Processing-Time-App\bin\Debug\netcoreapp3.1\Estimated-Processing-Time-App.pdb
+E:\Repositories\Estimated-Processing-Time-App\Estimated-Processing-Time-App\obj\Debug\netcoreapp3.1\Estimated-Processing-Time-App.csprojAssemblyReference.cache
+E:\Repositories\Estimated-Processing-Time-App\Estimated-Processing-Time-App\obj\Debug\netcoreapp3.1\Estimated_Processing_Time_App.Form1.resources
+E:\Repositories\Estimated-Processing-Time-App\Estimated-Processing-Time-App\obj\Debug\netcoreapp3.1\Estimated-Processing-Time-App.csproj.GenerateResource.cache
+E:\Repositories\Estimated-Processing-Time-App\Estimated-Processing-Time-App\obj\Debug\netcoreapp3.1\Estimated-Processing-Time-App.AssemblyInfoInputs.cache
+E:\Repositories\Estimated-Processing-Time-App\Estimated-Processing-Time-App\obj\Debug\netcoreapp3.1\Estimated-Processing-Time-App.AssemblyInfo.cs
+E:\Repositories\Estimated-Processing-Time-App\Estimated-Processing-Time-App\obj\Debug\netcoreapp3.1\Estimated-Processing-Time-App.csproj.CoreCompileInputs.cache
+E:\Repositories\Estimated-Processing-Time-App\Estimated-Processing-Time-App\obj\Debug\netcoreapp3.1\Estimated-Processing-Time-App.dll
+E:\Repositories\Estimated-Processing-Time-App\Estimated-Processing-Time-App\obj\Debug\netcoreapp3.1\Estimated-Processing-Time-App.pdb
+E:\Repositories\Estimated-Processing-Time-App\Estimated-Processing-Time-App\obj\Debug\netcoreapp3.1\Estimated-Processing-Time-App.genruntimeconfig.cache
