@@ -16,15 +16,9 @@ namespace Estimated_Processing_Time_App
             InitializeComponent();
         }
 
-        private int speedRate = 0;
+        private int feedRate = 0;
 
         #region 按鈕功能
-
-        private void buttonRead_Click(object sender, EventArgs e) {
-            ClearMessage();
-            AddMessage("讀取G-CODE中...");
-            AddMessage("讀取完畢");
-        }
 
         /// <summary>
         /// 按下預估時間按鈕行為
@@ -32,7 +26,10 @@ namespace Estimated_Processing_Time_App
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void buttonPredict_Click(object sender, EventArgs e) {
-            if (speedRate <= 0) {
+            ClearMessage();
+            AddMessage("讀取G-code中...");
+            AddMessage("讀取完畢");
+            if (feedRate <= 0) {
                 AddMessage("尚未選取加工時間");
             }
             else {
@@ -40,53 +37,41 @@ namespace Estimated_Processing_Time_App
                 AddMessage("...");
                 AddMessage("...");
                 AddMessage("...");
-                AddMessage("加工時間為" + (1000000 / speedRate) + "分鐘");
+                AddMessage("加工時間為" + (1000000 / feedRate) + "分鐘");
             }
 
         }
 
         #endregion
 
-        #region Speed Rate 選取行為
+        #region Feed Rate 選取行為
 
-        /// <summary>
-        /// 切換SpeedRate500行為
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void radioButton_SR500_MouseClick(object sender, MouseEventArgs e) {
-            AddMessage("切換 Speed Rate 為 500");
-            speedRate = 500;
+        private void radioButton_FR500_Click(object sender, EventArgs e) {
+            AddFeedRateMessage(500);
         }
 
-        /// <summary>
-        /// 切換SpeedRate1000行為
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void radioButton_SR1000_Click(object sender, EventArgs e) {
-            AddMessage("切換 Speed Rate 為 1000");
-            speedRate = 1000;
+        private void radioButton_FR1000_Click(object sender, EventArgs e) {
+            AddFeedRateMessage(1000);
         }
 
-        /// <summary>
-        /// 切換SpeedRate2000行為
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void radioButton_SR2000_Click(object sender, EventArgs e) {
-            AddMessage("切換 Speed Rate 為 2000");
-            speedRate = 2000;
+        private void radioButton_FR2000_Click(object sender, EventArgs e) {
+            AddFeedRateMessage(2000);
         }
 
-        /// <summary>
-        /// 切換SpeedRate4000行為
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void radioButton_SR4000_Click(object sender, EventArgs e) {
-            AddMessage("切換 Speed Rate 為 4000");
-            speedRate = 4000;
+        private void radioButton_FR3000_Click(object sender, EventArgs e) {
+            AddFeedRateMessage(3000);
+        }
+
+        private void radioButton_FR4000_Click(object sender, EventArgs e) {
+            AddFeedRateMessage(4000);
+        }
+
+        private void radioButton_FR5000_Click(object sender, EventArgs e) {
+            AddFeedRateMessage(5000);
+        }
+
+        private void radioButton_FR6000_Click(object sender, EventArgs e) {
+            AddFeedRateMessage(6000);
         }
 
         #endregion
@@ -99,6 +84,15 @@ namespace Estimated_Processing_Time_App
 
         private void AddMessage(string message) {
             textBoxMessage.AppendText(message + "\r\n");
+        }
+
+        private void AddFeedRateMessage(int feedRate) {
+            AddMessage("選擇 Feedrate 為 " + feedRate + " mm/min");
+            this.feedRate = feedRate;
+        }
+
+        private void RunMatlabCode() {
+            
         }
 
         #endregion
