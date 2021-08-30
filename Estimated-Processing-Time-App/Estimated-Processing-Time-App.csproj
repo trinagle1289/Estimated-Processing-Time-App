@@ -5,6 +5,23 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Estimated_Processing_Time_App</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="EstimateTimeFun">
+      <HintPath>Matlab dll\EstimateTimeFun.dll</HintPath>
+    </Reference>
+    <Reference Include="EstimateTimeFunNative">
+      <HintPath>Matlab dll\EstimateTimeFunNative.dll</HintPath>
+    </Reference>
+    <Reference Include="MWArray">
+      <HintPath>..\..\..\Program Files\MATLAB\R2021a\toolbox\dotnetbuilder\bin\win64\v4.0\MWArray.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Matlab dll\" />
+  </ItemGroup>
 
 </Project>

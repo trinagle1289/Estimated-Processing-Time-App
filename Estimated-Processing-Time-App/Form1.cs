@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
+using MathWorks.MATLAB.NET.Arrays;
+using MathWorks.MATLAB.NET.Utility;
+using EstimateTimeFun;
 
 namespace Estimated_Processing_Time_App
 {
@@ -14,9 +18,26 @@ namespace Estimated_Processing_Time_App
     {
         public Form1() {
             InitializeComponent();
+            SetupInstance();
         }
 
+        #region Field
+
         private int feedRate = 0;
+        private static EClass eClassInstance;
+
+        #endregion
+
+        #region EstimateTimeFun
+
+        /// <summary>
+        /// 設定實例
+        /// </summary>
+        private void SetupInstance() {
+            eClassInstance = new EClass();
+        }
+
+        #endregion
 
         #region 按鈕功能
 
@@ -28,18 +49,17 @@ namespace Estimated_Processing_Time_App
         private void buttonPredict_Click(object sender, EventArgs e) {
             ClearMessage();
             AddMessage("讀取G-code中...");
-            AddMessage("讀取完畢");
             if (feedRate <= 0) {
                 AddMessage("尚未選取加工時間");
             }
             else {
                 AddMessage("開始計算加工時間...");
+                double eTime = EstimateTime(); 
                 AddMessage("...");
                 AddMessage("...");
                 AddMessage("...");
-                AddMessage("加工時間為" + (1000000 / feedRate) + "分鐘");
+                AddMessage("加工時間為" + eTime + "秒");
             }
-
         }
 
         #endregion
@@ -91,11 +111,23 @@ namespace Estimated_Processing_Time_App
             this.feedRate = feedRate;
         }
 
-        private void RunMatlabCode() {
-            
+
+        /// <summary>
+        /// 估測加工時間
+        /// </summary>
+        private double EstimateTime() {
+            double result = -1.0;
+
+            MWArray eTime = eClassInstance.EstimateTimeFun();
+
+            double.TryParse(eTime.ToString(), out result);
+
+            return result;
         }
 
+
         #endregion
+
 
     }
 }
