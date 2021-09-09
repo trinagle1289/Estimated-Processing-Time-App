@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Repositories\\Estimated-Processing-Time-App\\Estimated-Processing-Time-App\\Estimated-Processing-Time-App.csproj": {}
+    "E:\\repos\\Estimated-Processing-Time-App\\Estimated-Processing-Time-App\\Estimated-Processing-Time-App.csproj": {}
   },
   "projects": {
-    "E:\\Repositories\\Estimated-Processing-Time-App\\Estimated-Processing-Time-App\\Estimated-Processing-Time-App.csproj": {
+    "E:\\repos\\Estimated-Processing-Time-App\\Estimated-Processing-Time-App\\Estimated-Processing-Time-App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Repositories\\Estimated-Processing-Time-App\\Estimated-Processing-Time-App\\Estimated-Processing-Time-App.csproj",
+        "projectUniqueName": "E:\\repos\\Estimated-Processing-Time-App\\Estimated-Processing-Time-App\\Estimated-Processing-Time-App.csproj",
         "projectName": "Estimated-Processing-Time-App",
-        "projectPath": "E:\\Repositories\\Estimated-Processing-Time-App\\Estimated-Processing-Time-App\\Estimated-Processing-Time-App.csproj",
+        "projectPath": "E:\\repos\\Estimated-Processing-Time-App\\Estimated-Processing-Time-App\\Estimated-Processing-Time-App.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "E:\\Repositories\\Estimated-Processing-Time-App\\Estimated-Processing-Time-App\\obj\\",
+        "outputPath": "E:\\repos\\Estimated-Processing-Time-App\\Estimated-Processing-Time-App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
